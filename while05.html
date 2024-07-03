@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //mostrar la tabla de multiplicar//
+        function multiplicar(){
+            let num= parseInt(prompt("ingrese el numero: "));
+        //mostrar la tabla//
+            let k=1;
+            let linea="";
+            while(k<=12){
+            linea=linea+(num+ "x" + k + "=" + k*num);
+            }
+            ocument.getElementById(("zona").innerHTML=linea;
+        }        
+    </script>
+    <style>
+        .box{
+            align-items: center;
+            justify-content: center;
+        }
+        .titulo{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="titulo">
+            INSTITUTO-CERTUS
+        </div>
+        <div class="subtitulo">
+            PROGRAMACION- WHILE
+        </div>
+        <div class="imagen">
+            <img src="img/banner2.jpg" alt="">
+        </div>
+        <div>
+            TABLA DE MULTIPLICAR
+        </div>
+        <div>
+            <button onclick="multiplicar();">multiplicar</button>
+        </div>
+        <div class="zona">
+
+
+        </div>
+    </div>
+    
+</body>
+</html>
